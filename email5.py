@@ -1,0 +1,21 @@
+#!/usr/bin/python
+# No Data Model in Python example
+
+import jinja2
+import json
+
+# Opening JSON file
+f = open('data/email_data.json')
+# returns JSON object as
+# a dictionary
+data = json.load(f)
+dict = data['info']
+templateLoader = jinja2.FileSystemLoader(searchpath="templates/")
+templateEnv = jinja2.Environment(loader=templateLoader)
+TEMPLATE_FILE = "email_template_newsletter.txt"
+template_object = templateEnv.get_template(TEMPLATE_FILE)
+
+output = template_object.render(data = dict)
+with open("outputs/email_newsletter_output_json.txt", "a") as f:
+    f.write(output)
+    f.write('\n')

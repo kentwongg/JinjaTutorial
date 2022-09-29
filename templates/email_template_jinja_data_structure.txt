@@ -1,0 +1,11 @@
+{# This is a Jinja Comment. You still need the curly braces! #}
+{# init a dictionary, similar to python but encapsulate within Jinja notation (curly braces!) #}
+{% set data = ({
+'Popeye\'s Chicken': 'College Street',
+    'McDonald\'s': 'Spadina',
+    'Chick-Fil-A': 'Yonge St',
+    'Nando\'s Chicken': 'Bay St'
+}) %}
+{% for key,value in data.items() %}
+{{ key }} has a 2:1 special at {{ value }}!
+{% endfor %}

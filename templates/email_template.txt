@@ -1,0 +1,1 @@
+{{ store }} has a 2:1 special at {{ address }}!

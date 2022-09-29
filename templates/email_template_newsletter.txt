@@ -1,0 +1,5 @@
+Lorem ipsum!
+
+This newsletter details the specials for fast food in downtown Toronto.
+
+Everyone's favourite McDonald's by {{ data["McDonald's"] }} would be McDonalds
