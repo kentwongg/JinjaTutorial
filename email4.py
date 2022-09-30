@@ -12,7 +12,7 @@ data = json.load(f)
 dict = data['info']
 templateLoader = jinja2.FileSystemLoader(searchpath="templates/")
 templateEnv = jinja2.Environment(loader=templateLoader)
-TEMPLATE_FILE = "email_template_jinja_data_structure.txt"
+TEMPLATE_FILE = "email_template.txt"
 template_object = templateEnv.get_template(TEMPLATE_FILE)
 
 for k, v in dict.items():

@@ -2,4 +2,7 @@ Lorem ipsum!
 
 This newsletter details the specials for fast food in downtown Toronto.
 
-Everyone's favourite McDonald's by {{ data["McDonald's"] }} would be McDonalds
+Everyone's favourite McDonald's by {{ data["McDonald's"] }} would be McDonalds.
+But isn't McDonalds sort of basic? That's why you should go get some Chick-Fil-A located at {{ data["Chick-Fil-A"] }}.
+Though sometimes we do like to veer off the beaten path and try the super spicy chicken at Nando's on {{ data["Nando's Chicken"] }}.
+But maybe you're in school and you just got roughed up by a midterm - then you need to drown your sorrows at Popeye's on {{ data["Popeye's Chicken"] }}
